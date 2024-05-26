@@ -3,6 +3,9 @@ from odoo import models, api, fields
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
+    p2 = fields.Char(string="p2")
+    p2_primary = fields.Char(string="p2 primary")
+
     @api.model
     def get_view(self, view_id=None, view_type="form", **options):
         current_user_groups = self.env.user.groups_id.mapped("name")
