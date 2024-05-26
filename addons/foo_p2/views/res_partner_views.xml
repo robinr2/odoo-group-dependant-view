@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="res_partner_form_p2" model="ir.ui.view">
+    <field name="name">res.partner.form.p2</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="foo.res_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='base']" position="after">
+        <field name="p2" groups="foo.group_p2"/>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="res_partner_form_p2_primary" model="ir.ui.view">
+    <field name="name">res.partner.form.p2.primary</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="foo.res_partner_form"/>
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='base']" position="after">
+        <field name="p2_primary"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>
