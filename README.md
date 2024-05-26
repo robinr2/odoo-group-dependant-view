@@ -1,4 +1,3 @@
-1. groups on fields
 reload bug:
 - change users group from group_p1 to group_p2
 - open a contact 
