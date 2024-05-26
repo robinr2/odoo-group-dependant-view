@@ -7,6 +7,8 @@
     <field name="arch" type="xml">
       <xpath expr="//field[@name='base']" position="after">
         <field name="extend"/>
+        <field name="p1_extend" groups="foo.group_p1"/>
+        <field name="p2_extend" groups="foo.group_p2"/>
       </xpath>
     </field>
   </record>
