@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-foo.access_foo,access_foo,foo.model_foo,base.group_user,1,1,1,1
+foo.access_address,access_address,foo.model_address,base.group_user,1,1,1,1
+foo.access_mailbox_address,access_mailbox_address,foo.model_mailbox_address,base.group_user,1,1,1,1
+foo.access_billing_address,access_billing_address,foo.model_billing_address,base.group_user,1,1,1,1

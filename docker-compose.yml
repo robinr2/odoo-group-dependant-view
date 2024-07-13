@@ -1,10 +1,11 @@
 services:
   web:
-    image: odoo:16.0
+    build: .
     depends_on:
       - db
     ports:
       - "8069:8069"
+      - "5678:5678"
     volumes:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
@@ -27,7 +28,6 @@ services:
 volumes:
   odoo-web-data:
   odoo-db-data:
-
 secrets:
   postgresql_password:
     file: odoo_pg_pass

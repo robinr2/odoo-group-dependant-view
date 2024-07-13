@@ -3,9 +3,8 @@
     'description': 'Foo',
     'depends': ['contacts'],
     'data': [
-        # 'security/ir.model.access.csv',
-        'security/user_groups.xml',
         'views/res_partner_views.xml',
+        'security/ir.model.access.csv',
     ],
     'installable': True,
     'application': True,
